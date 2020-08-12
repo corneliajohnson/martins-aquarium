@@ -1,0 +1,35 @@
+body {
+  background-color: aqua;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#fishtank {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1em;
+  border: 5px solid blue;
+}
+
+.fishlist {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fishlist-card {
+  margin: 1em;
+  flex-basis: 25%;
+}
+
+.card-image{
+
+}
+
+.fish-image{
+  width: 100%;
+  height: auto;
+}
+
+aside {
+  border: 5px dotted red;
+}
