@@ -1,6 +1,6 @@
-import { useFish } from './FishDataProvider.js'
 import { FishList } from './FishList.js'
-
-const allTheFish = useFish()
+import { TipList } from './tips/TipList.js'
 
 FishList()
+TipList()
+
