@@ -1,13 +1,17 @@
 body {
-  background-color: aqua;
+  background-color: whitesmoke;
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+aside {
+  background-color: azure;
+  padding: 1em;
 }
 
 #fishtank {
   display: flex;
   flex-wrap: nowrap;
   margin: 1em;
-  border: 5px solid blue;
 }
 
 .fishlist {
@@ -19,17 +23,11 @@ body {
 .fishlist-card {
   margin: 1em;
   flex-basis: 25%;
-}
-
-.card-image{
-
+  background-color: aliceblue;
+  border: 2px solid black;
 }
 
 .fish-image{
   width: 100%;
   height: auto;
-}
-
-aside {
-  border: 5px dotted red;
 }
