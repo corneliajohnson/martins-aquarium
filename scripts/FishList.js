@@ -3,33 +3,29 @@
  */
 
 // TODO: Import `useFish` from the data provider module
-import { useFish } from './FishDataProvider.js'
 import { Fish } from './Fish.js'
+import { useFish, makeMostHolyFish, makeSoldierFish, makeNonHolyFish } from './FishDataProvider.js'
+const contentElement = document.querySelector(".fishList")
 
 export const FishList = () => {
-
   // Get a reference to the `<article class="content">` element
-  const contentElement = document.querySelector(".fishList")
-  const fishes = useFish()
+  // const fishes = useFish()
+  const holyFish = makeMostHolyFish()
+  const soliderFish = makeSoldierFish()
+  const nonholyfish = makeNonHolyFish()
 
+  return whichFish(holyFish)
+}
 
-  //-------------------------------------
-  //MY UGLY CODE -- BUT IT WORKS
-  // const allfish = []
-  // for (let i = 0; i < fishes.length; i++) {
-  //   allfish.push((Fish(fishes[i])))
-  // }
-  //------------------------------------
-
-
+const whichFish = (fishArr) => {
   //Function done with class
   let fishHTMLRepresentation = ""
-  for (const fish of fishes) {
+  for (const fish of fishArr) {
     fishHTMLRepresentation += Fish(fish);
   }
 
   // Add to the existing HTML in the content element
   contentElement.innerHTML += `
-    ${fishHTMLRepresentation}
-  `;
+      ${fishHTMLRepresentation}
+    `;
 }

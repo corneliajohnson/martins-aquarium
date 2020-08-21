@@ -10,7 +10,7 @@ export const Fish = (fish) => {
       <ul>
         <li>Name: ${fish.name}</li>
         <li>Species: ${fish.species}</li>
-        <li>Length: ${fish.length}s</li>
+        <li>Length: ${fish.length} inches</li>
         <li>Diet: ${fish.diet}</li>
         <li>Harvest Location: ${fish.harvestLocation}</li>
       </ul>
